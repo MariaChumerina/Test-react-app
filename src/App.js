@@ -7,6 +7,7 @@ import Main from './components/Main/Main.jsx';
 import Login from './components/Login/Login.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Profile from './components/Profile/Profile.jsx';
+import Header from './components/Shared/Header.jsx';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
 
     return (
         <div className="App">
+          <Header />
           <Switch>
             <Route history={history} path="/" exact component={Main} />
             <Route history={history} path="/login" exact component={Login} />

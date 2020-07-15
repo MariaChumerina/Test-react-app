@@ -3,8 +3,10 @@ import * as React from 'react';
 export default class Main extends React.Component {
   render() {
     return (
-        <div>
-          I'm main component
+        <div className="container margin-top-50">
+          Ко́шка, или дома́шняя ко́шка, — домашнее животное, одно из наиболее популярных «животных-компаньонов».
+          С точки зрения научной систематики, домашняя кошка — млекопитающее семейства кошачьих отряда хищных.
+          Ранее домашнюю кошку нередко рассматривали как отдельный биологический вид.
         </div>
     )
   }

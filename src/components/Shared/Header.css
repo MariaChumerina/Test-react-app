@@ -1,0 +1,70 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #6c5ce7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+.menu:hover .menu-link:not(:hover) {
+    color: #241c69;
+}
+.menu-list {
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.menu-group {
+    flex-grow: 1;
+}
+.menu-link {
+    display: block;
+}
+.menu-link {
+    padding: 2rem 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-link:focus {
+    outline: 2px solid #fff;
+}
+.menu-link {
+    position: relative;
+    overflow: hidden;
+
+    will-change: color;
+    transition: color .25s ease-out;
+}
+.menu-link::before,
+.menu-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    will-change: width;
+    transition: width .1s ease-out;
+    position: absolute;
+    bottom: 0;
+}
+.menu-link::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-link::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+.menu-link:hover::before,
+.menu-link:hover::after {
+    width: 100%;
+    transition-duration: .2s;
+}
+
+
