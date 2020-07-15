@@ -1,6 +1,7 @@
 .gallery {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 img {
     width: 30%;
