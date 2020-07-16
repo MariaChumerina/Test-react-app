@@ -23,6 +23,9 @@ export default class Profile extends React.Component {
             <h1>
               Profile
             </h1>
+            <p>Иванов Иван Иванович</p>
+            <p>18 лет</p>
+            <p>Статус: админ</p>
             <button type="button" className="btn btn-width" onClick={this.handleClick}>
               Выйти
             </button>
