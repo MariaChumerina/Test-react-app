@@ -1,5 +1,5 @@
 <h1>Test react app</h1><br/>
-There are 4 pages: home, news, login / profile
+There are 4 pages: home, news, login / profile<br/>
 <br/>
 <b>Used in development:</b><br/>
 react-router<br/>
