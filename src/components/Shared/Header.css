@@ -34,6 +34,38 @@ header {
     will-change: color;
     transition: color .25s ease-out;
 }
+@media screen and (max-width: 767px) {
+    .menu-list {
+        display: flex;
+        font-size: 14px;
+    }
+    .menu-group {
+        min-width: fit-content;
+        margin-right: 35px;
+    }
+    .menu-group:last-child {
+        margin-right: 0;
+    }
+    .menu-limiter {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+        -webkit-mask-image: linear-gradient(
+                90deg,
+                #000 calc(100% - 18px),
+                rgba(0, 0, 0, .25) calc(100% - 9px),
+                transparent
+        );
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .menu-group {
+        margin-right: 55px;
+    }
+}
 
 
 

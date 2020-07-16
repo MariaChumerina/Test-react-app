@@ -9,7 +9,7 @@ export default class Login extends React.Component {
     return (
         <header>
           <div className="container">
-            <nav className="menu">
+            <nav className="menu menu-limiter">
               <ul className="menu-list">
                 <li className="menu-group">
                   <Link className="menu-link" to="/">

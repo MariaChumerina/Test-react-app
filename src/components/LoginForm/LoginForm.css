@@ -32,3 +32,8 @@ input[type=text], input[type=password] {
     font-size: 12px;
     color: gray;
 }
+@media screen and (max-width: 767px) {
+    form {
+        width: 98%;
+    }
+}
