@@ -12,59 +12,28 @@ header {
 }
 .menu-list {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
 }
-.menu-group {
-    flex-grow: 1;
-}
 .menu-link {
     display: block;
 }
 .menu-link {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
 }
-.menu-link:focus {
-    outline: 2px solid #fff;
-}
 .menu-link {
     position: relative;
     overflow: hidden;
-
     will-change: color;
     transition: color .25s ease-out;
 }
-.menu-link::before,
-.menu-link::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: #fff;
-    will-change: width;
-    transition: width .1s ease-out;
-    position: absolute;
-    bottom: 0;
-}
-.menu-link::before {
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.menu-link::after {
-    right: 50%;
-    transform: translateX(50%);
-}
-.menu-link:hover::before,
-.menu-link:hover::after {
-    width: 100%;
-    transition-duration: .2s;
-}
 
 
