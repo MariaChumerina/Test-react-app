@@ -15,17 +15,18 @@ input[type=text], input[type=password] {
 .form-group {
     margin-top: 10px;
 }
-button {
-    background-color: #5f9ce9;
-    color: white;
-    padding: 14px 20px;
-    margin: 12px 0;
+.btn-link {
     border: none;
-    cursor: pointer;
-    width: 100%;
+    background: none;
+    color: #0000FF;
+    font-size: 16px;
 }
-button:hover {
-    opacity: 0.8;
+.btn-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.align-middle {
+    text-align: center;
 }
 .small-text {
     font-size: 12px;

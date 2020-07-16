@@ -1,1 +1,12 @@
-
+.btn {
+    background-color: #5f9ce9;
+    color: white;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.btn:hover {
+    opacity: 0.8;
+}

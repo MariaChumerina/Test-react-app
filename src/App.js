@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Switch from 'react-router-dom/es/Switch.js';
-import Route from 'react-router-dom/es/Route.js';
-import withRouter from 'react-router-dom/es/withRouter.js';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/Main.jsx';
 import LoginForm from './components/LoginForm/LoginForm.jsx';
