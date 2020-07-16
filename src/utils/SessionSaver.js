@@ -1,16 +1,16 @@
 class SessionSaver {
-  static IS_LOGIN = 'userLoggedOut';
+  static USER_IS_LOGIN = 'userLoggedOut';
 
   loginUser() {
-    localStorage.setItem(SessionSaver.IS_LOGIN, 'userLoggedIn');
+    localStorage.setItem(SessionSaver.USER_IS_LOGIN, 'userLoggedIn');
   }
 
   logoutUser() {
-    localStorage.setItem(SessionSaver.IS_LOGIN, 'userLoggedOut');
+    localStorage.setItem(SessionSaver.USER_IS_LOGIN, 'userLoggedOut');
   }
 
   getUserStatus() {
-    return localStorage.getItem(SessionSaver.IS_LOGIN);
+    return localStorage.getItem(SessionSaver.USER_IS_LOGIN);
   }
 }
 
